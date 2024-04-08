@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Alunos</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Lista de Alunos</h1>
+    <ul>
+        {{#each alunos}}
+            <li><a href="/alunos/{{id}}">{{nome}}</a></li>
+        {{/each}}
+    </ul>
+    <a href="/alunos/novo">Adicionar Novo Aluno</a>
+</body>
+</html>
